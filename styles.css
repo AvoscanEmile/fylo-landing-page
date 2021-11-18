@@ -1,0 +1,36 @@
+/* Variables */
+
+:root {
+    --section-width: clamp(300px, 90vw, 1500px);
+    --darkest-blue: hsl(243, 87%, 12%);
+    --des-blue: hsl(238, 22%, 44%);
+    --bright-blue: hsl(224, 93%, 58%);
+    --cyan: hsl(170, 45%, 43%);
+    --gray-blue: hsl(240, 75%, 98%);
+    --gray: hsl(0, 0%, 75%);
+    --ff-h: "Raleway", sans-serif;
+    --ff-p: "Open Sans", sans-serif;
+    --fw-regular: 400;
+    --fw-bold: 700;
+    --fs-h2: 36px;
+    --fs-p: 18px;
+    --fs-card: 16px;
+}
+
+/* General Styling */
+
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--ff-p);
+    font-size: var(--fs-p);
+    font-weight: var(--fw-regular);
+    margin: 0;
+    color: var(--darkest-blue);
+}
