@@ -5,7 +5,7 @@
     --darkest-blue: hsl(243, 87%, 12%);
     --des-blue: hsl(238, 22%, 44%);
     --bright-blue: hsl(224, 93%, 58%);
-    --cyan: hsl(170, 45%, 43%);
+    --cyan: #3c9f8f;
     --gray-blue: hsl(240, 75%, 98%);
     --gray: hsl(0, 0%, 75%);
     --ff-h: "Raleway", sans-serif;
@@ -268,4 +268,108 @@ h2 {
 
 .input-container__submit:hover {
     opacity: 0.8;
+}
+
+/* Footer Styling */
+
+.footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    background-color: var(--darkest-blue);
+    padding: 5em 0;
+}
+
+.footer__logo-container {
+    width: var(--section-width);
+}
+
+.footer__main-container {
+    width: var(--section-width);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 15px;
+}
+
+.footer__phone-container,
+.footer__email-container {
+    display: flex;
+    align-items: center;
+}
+
+.footer__phone-logo,
+.footer__email-logo {
+    margin-right: 25px;
+}
+
+.footer__phone-number {
+    margin: 0;
+}
+
+.footer__second-container,
+.footer__third-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__page-link {
+    margin-top: 30px;
+    text-decoration: none;
+    color: white;
+}
+
+.footer__page-link:hover {
+    color: var(--cyan);
+}
+
+.footer__page-link:first-child {
+    margin-top: 0;
+}
+
+.footer__social-container {
+    display: flex;
+    align-items: center;
+}
+
+.footer__social-link {
+    margin-right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__social-link:nth-of-type(2) {
+    width: 29px;
+}
+
+.footer__social-link:last-of-type {
+    margin-right: 0;
+}
+
+.footer__social-first {
+    position: absolute;
+    z-index: 1;
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 50%;
+    object-fit: scale-down;
+}
+
+.footer__social-first:hover {
+    opacity: 0;
+}
+ 
+.footer__social-second {
+    position: absolute;
+    z-index: 0;
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+    border: 2px solid var(--cyan);
+    border-radius: 50%;
+    object-fit: scale-down;
 }
